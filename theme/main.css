@@ -1,0 +1,24 @@
+:root {
+  --vp-c-brand: #646cff;
+  --vp-c-brand-light: #747bff;
+}
+
+:root {
+  --maroon: #7a0019;
+  --maroon-light: #900021;
+  --vp-c-brand: var(--maroon);
+  --vp-c-brand-light: var(--maroon-light);
+}
+
+.vp-doc a:hover {
+  color: var(--vp-c-brand-light);
+}
+
+.dark {
+  --vp-c-brand: var(--gold);
+  --vp-c-brand-light: var(--gold-light);
+}
+
+body {
+  background-color: initial !important;
+}
