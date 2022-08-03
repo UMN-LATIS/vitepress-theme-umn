@@ -6,7 +6,7 @@
 </template>
 <script setup>
 import DefaultTheme from "vitepress/theme";
-import UMNHeader from "../../../resources/assets/cla-vue-template/src/components/UniversityHeader.vue";
+import UMNHeader from "./cla-vue-template/src/components/UniversityHeader.vue";
 
 const { Layout } = DefaultTheme;
 </script>
