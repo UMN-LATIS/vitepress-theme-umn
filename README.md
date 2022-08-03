@@ -30,7 +30,7 @@ git submodule add https://github.com/UMN-LATIS/vitepress-theme-umn.git docs/.vit
 4. Create a symbolic link from `./docs/.vitepress/theme-umn` to `./docs/.vitepress/theme`. This is necessary because vitepress uses the `theme` folder to find the theme.
 
 ```sh
-ln -s ./docs/.vitepress/theme-umn ./docs/.vitepress/theme
+(cd ./docs/.vitepress && ln -s theme-umn/src/.vitepress/theme theme)
 ```
 
 5. Add your [vitepress configuration](https://vitepress.vuejs.org/guide/configuration.html) to `docs/.vitepress/config.ts`.
