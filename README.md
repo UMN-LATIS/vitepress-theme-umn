@@ -6,34 +6,25 @@ This is the documentation theme to use with [VitePress](https://vitepress.vuejs.
 
 Prerequisites:
 
-- Vue 3
-- typescript
-
-1. Install vitepress:
-
-   ```
-   yarn add --dev vitepress
-   ```
-
-2. Create a `docs` for your markdown files, and `docs/.vitepress` folder for vitepress config and theme:
+- [VitePress](https://vitepress.vuejs.org/)
+- Typescript
 
 ```sh
-mkdir -p docs/.vitepress
+$ npm install -D @umn-latis/vitepress-theme-umn
 ```
 
-3. Add this theme as a submodule:
+Then set this as the theme within `.vitepress/theme/index.ts`:
 
-```sh
-git submodule add https://github.com/UMN-LATIS/vitepress-theme-umn.git docs/.vitepress/theme-umn
+```ts
+// .vitepress/theme/index.ts
+export { default } from "@umn-latis/vitepress-theme-umn";
 ```
 
-4. Create a symbolic link from `./docs/.vitepress/theme-umn` to `./docs/.vitepress/theme`. This is necessary because vitepress uses the `theme` folder to find the theme.
+## Customizing
 
-```sh
-(cd ./docs/.vitepress && ln -s theme-umn/src/.vitepress/theme theme)
-```
+Add your [vitepress configuration](https://vitepress.vuejs.org/guide/configuration.html) to `docs/.vitepress/config.ts`.
 
-5. Add your [vitepress configuration](https://vitepress.vuejs.org/guide/configuration.html) to `docs/.vitepress/config.ts`.
+For example:
 
 ```ts
 // docs/.vitepress/config.ts

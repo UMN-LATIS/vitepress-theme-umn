@@ -1,3 +1,3 @@
-[submodule "src/.vitepress/theme/cla-vue-template"]
-	path = src/.vitepress/theme/cla-vue-template
+[submodule "src/cla-vue-template"]
+	path = src/cla-vue-template
 	url = https://github.com/UMN-LATIS/CLA-vue-template.git
