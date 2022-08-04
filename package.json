@@ -1,6 +1,6 @@
 {
   "name": "@umn-latis/vitepress-theme-umn",
-  "version": "0.1.0-0",
+  "version": "0.1.0",
   "main": "src/index.ts",
   "author": "James Johnson <johnsojr@umn.edu>",
   "license": "MIT",
