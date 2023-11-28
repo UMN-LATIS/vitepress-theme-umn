@@ -3,6 +3,7 @@ export default {
   title: "Example",
   base: "/example-base/",
   lastUpdated: true,
+  appearance: false, // force light mode. UMN header looks bad in dark mode
   themeConfig: {
     sidebar: [
       {
@@ -38,10 +39,8 @@ export default {
       message: "Made by LATIS",
       copyright: "Copyright © University of Minnesota",
     },
-    algolia: {
-      appId: "",
-      apiKey: "",
-      indexName: "",
+    search: {
+      provider: "local",
     },
   },
 };
