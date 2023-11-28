@@ -16,12 +16,15 @@
     "release": "release-it"
   },
   "devDependencies": {
-    "release-it": "^15.2.0",
-    "typescript": "^4.7.4",
-    "vitepress": "^1.0.0-alpha.4",
-    "vue": "^3.2.37"
+    "release-it": "^17.0.0",
+    "typescript": "^5.3.2",
+    "vitepress": "^1.0.0-rc.31",
+    "vue": "^3.3.9"
   },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "@umn-latis/cla-vue-template": "^1.1.0"
   }
 }
