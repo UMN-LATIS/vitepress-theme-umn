@@ -4,11 +4,16 @@
   "main": "src/index.ts",
   "author": "James Johnson <johnsojr@umn.edu>",
   "license": "MIT",
+  "type": "module",
   "exports": {
     ".": {
       "default": "./src/index.ts"
     }
   },
+  "files": [
+    "src",
+    "types"
+  ],
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
