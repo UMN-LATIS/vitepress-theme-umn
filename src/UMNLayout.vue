@@ -4,9 +4,9 @@
     <Layout class="default-layout" />
   </div>
 </template>
-<script setup>
+<script setup lang="ts">
 import DefaultTheme from "vitepress/theme";
-import UMNHeader from "./cla-vue-template/src/components/UniversityHeader.vue";
+import { UniversityHeader as UMNHeader } from "@umn-latis/cla-vue-template";
 
 const { Layout } = DefaultTheme;
 </script>

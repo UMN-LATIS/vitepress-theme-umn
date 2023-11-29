@@ -1,8 +1,19 @@
-export default {
+import { defineConfig } from "vitepress";
+
+export default defineConfig({
   lang: "en-US",
   title: "Example",
   base: "/example-base/",
   lastUpdated: true,
+  appearance: false, // force light mode. UMN header looks bad in dark mode
+  vite: {
+    // workaround for vitepress build failing when using the cla-vue-template
+    // it seems that vitepress wants cla-vue-template to be ssr compatible
+    // but it's currently not
+    ssr: {
+      noExternal: ["@umn-latis/cla-vue-template"],
+    },
+  },
   themeConfig: {
     sidebar: [
       {
@@ -38,10 +49,8 @@ export default {
       message: "Made by LATIS",
       copyright: "Copyright © University of Minnesota",
     },
-    algolia: {
-      appId: "",
-      apiKey: "",
-      indexName: "",
+    search: {
+      provider: "local",
     },
   },
-};
+});
